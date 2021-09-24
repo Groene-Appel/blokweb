@@ -1,5 +1,92 @@
 /* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box;
+  padding: 0;
+  margin: 0;  
 }
 
+/* Header */
+header > section {
+  background-color: #22422A;
+  color: white;
+}
+
+/*Aanbieding*/
+section > h4 {
+  padding-top: 0.65em;
+  padding-bottom: 0.65em;
+  text-align: center;
+  font-family: 'Segoe UI';
+  font-weight: lighter;
+}
+
+h4 > a {
+  padding: 0;
+  text-decoration: none;
+  color: white;
+  font-size: 11pt;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid white;
+}
+
+
+/*Navigatie*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  background-color: #FDFAF7;
+}
+
+nav > img {
+  margin-right: 0.4em;
+  margin-left: 0.4em;
+}
+
+
+/*sectionblok lichtgeel*/
+.lichtgeel {
+  background-color: #F9F1E4;
+  text-align: center;
+  padding-top: 2em;
+  font-family: 'Segoe UI';
+}
+
+h1 {
+  font-size: 38pt;
+  color: #22422A;
+  font-family: 'Segoe UI Semibold';
+  margin-bottom: 0.4em;
+}
+
+section > article > p {
+  color: #22422A;
+  font-size: 16pt;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1.9em;
+}
+
+
+section > article > a {
+  background-color: #22422A;
+  color: white;
+  padding-bottom: 1.3em;
+  padding-top: 1.3em;
+  padding-left: 2.4em;
+  padding-right: 2.4em;
+  text-decoration: none;
+  font-family: 'Segoe UI Semibold';
+  border-radius: 60px;
+  font-size: 10pt;
+}
+
+article > img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 4em;
+}
