@@ -1,92 +1,274 @@
 /* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;
-  padding: 0;
-  margin: 0;  
-}
-
-/* Header */
-header > section {
-  background-color: #22422A;
-  color: white;
-}
-
-/*Aanbieding*/
-section > h4 {
-  padding-top: 0.65em;
-  padding-bottom: 0.65em;
-  text-align: center;
-  font-family: 'Segoe UI';
-  font-weight: lighter;
-}
-
-h4 > a {
-  padding: 0;
-  text-decoration: none;
-  color: white;
-  font-size: 11pt;
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-  border: 0;
-  border-radius: 0;
-  border-bottom: 1px solid white;
-}
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0; 
+    color: #22422A;
+  }
 
 
 /*Navigatie*/
 nav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  background-color: #FDFAF7;
+    background-color: #fcf9f3;
+
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    display: flex;
+    justify-content: space-between;
 }
 
-nav > img {
-  margin-right: 0.4em;
-  margin-left: 0.4em;
+nav :first-child {
+    margin-left: 0.4em;
 }
 
-
-/*sectionblok lichtgeel*/
-.lichtgeel {
-  background-color: #F9F1E4;
-  text-align: center;
-  padding-top: 2em;
-  font-family: 'Segoe UI';
+nav :last-child {
+    margin-right: 0.4em;
 }
+
 
 h1 {
-  font-size: 38pt;
-  color: #22422A;
-  font-family: 'Segoe UI Semibold';
-  margin-bottom: 0.4em;
+    margin-top: 0.6em;
+    margin-bottom: 0.5em;
+
+    font-size: 40pt;
+    font-weight: lighter;
 }
 
-section > article > p {
-  color: #22422A;
-  font-size: 16pt;
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-bottom: 1.9em;
+h2 {
+    color: #22422A;
+    
+    margin-left: 1.0em;
+    margin-right: 1.0em;
+
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+    font-size: 26pt;
+    font-weight: lighter;
+}
+
+/*(h2) More Ways To Find the Perfect Plant*/
+.other-choices {
+    color: #22422A;
+    
+    margin-left: 1.0em;
+    margin-right: 1.0em;
+
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+
+    font-size: 26pt;
+    font-weight: lighter;
+}
+
+h3 {
+    color: #22422A;
+
+    font-family: 'Segoe UI Semibold';
+    text-align: center;
+    font-size: 16pt;
+    margin-bottom: 2.2em;
+}
+
+h4 {
+    margin-left: 2.3em;
+    margin-right: 2.3em;
+    margin-bottom: 1.5em;
+    margin-top: 2em;
+}
+
+h5 {
+    color: #f8f1e3;
+
+    font-family: 'Segoe UI Semibold';
+    font-size: 9pt;
+    padding-bottom: 1.5em;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/*(a) free shipping on orders €75,-*/
+.promo-link {
+    color: #fcf9f3;
+
+    text-decoration: none;
+    border-bottom: solid 1px #fcf9f3;
+}
+
+/*(a) Shop & Learn more Button*/
+.button {
+    background-color: #22422A;
+    color: white;
+
+    padding-bottom: 1.2em;
+    padding-top: 1.2em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+
+    margin-left: 3em;
+    margin-right: 3em;
+
+    text-decoration: none;
+    font-family: 'Segoe UI Semibold';
+
+    border-radius: 25px;
+    font-size: 10.5pt;
 }
 
 
-section > article > a {
-  background-color: #22422A;
-  color: white;
-  padding-bottom: 1.3em;
-  padding-top: 1.3em;
-  padding-left: 2.4em;
-  padding-right: 2.4em;
-  text-decoration: none;
-  font-family: 'Segoe UI Semibold';
-  border-radius: 60px;
-  font-size: 10pt;
+/*Section(3) Best Sellers*/
+a > img {
+    max-width: 13.5em;
+    height: auto;
 }
 
-article > img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 4em;
+/*Section(3) Best Sellers*/
+a > article {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    margin-bottom: 0;
+    font-size: 11pt;
+
+}
+
+
+/*(p) promo-banner*/
+.promo-banner {
+    background-color: #22422A;
+    color: #fcf9f3;
+
+    font-family: 'Segoe UI';
+    font-weight: lighter;
+    text-align: center;
+
+    padding: 0.60em;
+    width: 100%;
+}
+
+/*Section(1) introduction*/
+.introduction {
+    background-color: #f8f1e3;
+    color: #22422A;
+
+    text-align: center;
+    font-family: 'Matrix II OT Book';
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*(p) Section 2*/
+.subtitle {
+    color: #22422A;
+
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 1.6em;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    line-height: 30px;
+}
+
+article {
+    margin-bottom: 4em;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    list-style: none;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+li {
+    list-style-type: none;   
+}
+
+.BestSellers {
+    display: flex;
+    overflow: auto;
+}
+
+.productprijs {
+    text-align: right;
+    color: #22422A;
+}
+
+figcaption {
+    padding-bottom: 1em;
+}
+
+figcaption:nth-child(4){
+    text-align: right;
+}
+
+/*(p) Maintekst (section 3,4)*/
+.maintekst {
+    color: #22422A;
+
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 3em;
+
+    font-size: 14pt;
+    line-height: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*klopt nog niet*/
+iframe {
+    max-width: 83%;
+    margin-left: 2em;
+}
+
+/*navigatie (footer)*/
+.nav-footer {
+    display: inline;
+    background-color: #22422A;
+}
+
+a {
+    text-decoration: none;
+    color: #fcf9f3;
+}
+
+footer {
+    background-color: #22422A;
+}
+
+.section-footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/*(p) Footer*/
+nav > p {
+    color: #fcf9f3;
+    line-height: 2.5em;
+    font-family: 'Segoe UI Semibold';
+    font-size: 10pt;
+}
+
+hr {
+    background-color: #22422A;
+
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    padding-bottom: 1.3px;
+    padding-top: 1.3px;
+
+    border-style: none;
 }
